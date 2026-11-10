@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Trading Helper · Graphite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" id="brandLogo"></div>
+        <div class="brand-text"><b>Trading Helper</b><span>Graphite · макет</span></div>
+      </div>
+      <nav id="modeSeg" aria-label="Режим"></nav>
+      <div class="top-right">
+        <div class="market-chip" id="marketChip"></div>
+        <button class="account-pill" id="accountPill" title="Счёт и риск"></button>
+        <button class="btn glass-btn" id="menuBtn" title="Меню и настройки"></button>
+      </div>
+    </header>
+    <main class="views">
+      <section class="view" id="view-day" data-view="day"></section>
+      <section class="view" id="view-backtest" data-view="backtest"></section>
+      <section class="view" id="view-live" data-view="live"></section>
+    </main>
+  </div>
+  <div class="toasts" id="toasts"></div>
+
+  <script src="vendor/lightweight-charts.standalone.production.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/strategies.js"></script>
+  <script src="js/bank.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/live.js"></script>
+  <script src="js/day.js"></script>
+  <script src="js/backtest.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
